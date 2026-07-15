@@ -13,6 +13,7 @@
   color: #810f0f;
   border-top: 3px solid #333;
   border-bottom: 3px solid #333;
+  user-select: none;
 }
 
 .search-container {

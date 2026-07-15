@@ -4,8 +4,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 
 import App from "./App.tsx";
-import Favoritos from "./pages/Favoritos.tsx";
 import Home from "./pages/Home.tsx";
+import SeriesPage from "./pages/SeriesPage.tsx";
+import Favoritos from "./pages/Favoritos.tsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "favoritos",
         element: <Favoritos />,
+      },
+      {
+        path: "series",
+        element: <SeriesPage />,
       },
     ],
   },

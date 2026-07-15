@@ -18,9 +18,9 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Navegação</h3>
 
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
           <a href="#">Filmes</a>
-          <a href="#">Séries</a>
+          <Link to="/series">Séries</Link>
           <Link to="/favoritos">Favoritos</Link>
         </div>
 

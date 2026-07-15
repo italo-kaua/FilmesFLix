@@ -18,10 +18,10 @@ const Navbar = ({ onSearch }: NavbarProps) => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">Filmes</a>
+          <Link to="/">Filmes</Link>
         </li>
         <li>
-          <a href="#">Séries</a>
+          <Link to="/series">Séries</Link>
         </li>
         <li>
           <Link to="/favoritos">Favoritos</Link>

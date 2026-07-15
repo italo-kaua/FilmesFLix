@@ -1,14 +1,17 @@
 import type { MovieProps } from "../types/movies";
+import type { SerieProps } from "../types/series" 
 
 const KEY = "favoritos";
 
-export function getFavoritos(): MovieProps[] {
+type Favorito = MovieProps | SerieProps
+
+export function getFavoritos(): Favorito[] {
     return JSON.parse(localStorage.getItem(KEY) || "[]" )
 }
 
-export function addFavorito(movie: MovieProps) {
+export function addFavorito(item: Favorito) {
  const favoritos = getFavoritos()
- localStorage.setItem(KEY, JSON.stringify([...favoritos, movie]))
+ localStorage.setItem(KEY, JSON.stringify([...favoritos, item]))
 }
 
 export function removeFavorito(id: number) {

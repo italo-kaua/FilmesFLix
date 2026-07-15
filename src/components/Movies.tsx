@@ -1,4 +1,5 @@
 import type { MovieProps } from "../types/movies";
+import type { SerieProps } from "../types/series";
 
 import { addFavorito, removeFavorito, isFavorito } from "../services/favorites";
 
@@ -6,14 +7,16 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 import "./Movies.css";
 
+type Favorito = MovieProps | SerieProps;
+
 type Props = {
-  movies: MovieProps[];
+  movies: Favorito[];
   title: string;
   onFavoriteChange?: () => void;
 };
 
 const Movies = ({ movies, title, onFavoriteChange }: Props) => {
-  const toggleFavorito = (movie: MovieProps) => {
+  const toggleFavorito = (movie: Favorito) => {
     if (isFavorito(movie.id)) {
       removeFavorito(movie.id);
     } else {
@@ -44,7 +47,7 @@ const Movies = ({ movies, title, onFavoriteChange }: Props) => {
                 </button>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={movie.title}
+                  alt={"title" in movie ? movie.title : movie.name}
                 />
 
                 <div className="overlay">
@@ -52,8 +55,14 @@ const Movies = ({ movies, title, onFavoriteChange }: Props) => {
                 </div>
               </div>
 
-              <h2>{movie.title}</h2>
-              <span>{movie.release_date.slice(0, 4)}</span>
+              <h2>{"title" in movie ? movie.title : movie.name}</h2>
+
+              <span>
+                {("release_date" in movie
+                  ? movie.release_date
+                  : movie.first_air_date
+                ).slice(0, 4)}
+              </span>
             </div>
           ))}
         </div>

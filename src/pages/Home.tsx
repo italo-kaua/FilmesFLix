@@ -10,7 +10,7 @@ const Home = () => {
   const { search } = useOutletContext<{ search: string }>();
 
   const [movies, setMovies] = useState<MovieProps[]>([]);
-  const [, setFavoritos] = useState<MovieProps[]>(() => getFavoritos());
+  const [, setFavoritos] = useState(() => getFavoritos());
 
   useEffect(() => {
     async function carregarFilmes() {
