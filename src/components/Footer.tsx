@@ -24,7 +24,7 @@ const Footer = () => {
           <Link to="/favoritos">Favoritos</Link>
         </div>
 
-        <div className="footer-links">
+        <div className="footer-links-categorias">
           <h3>Categorias</h3>
 
           <a href="#">Ação</a>
@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="#">Ficção Científica</a>
         </div>
 
-        <div className="footer-links">
+        <div className="footer-links-informacao">
           <h3>Informações</h3>
 
           <a href="#">Sobre</a>

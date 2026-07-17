@@ -103,3 +103,32 @@
   overflow: hidden;
   margin-top: 160px;
 }
+
+@media (max-width: 768px) {
+  .secao-filmes {
+    max-width: 100%;
+    padding: 30px 10px;
+  }
+
+  .secao-filmes h1 {
+    padding-left: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .filmes {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0;
+  }
+
+  .filmes-card img {
+    height: 240px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+}
+

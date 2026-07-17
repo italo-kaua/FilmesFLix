@@ -8,3 +8,7 @@
 body {
     background-color: #130b0b;
 }
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
