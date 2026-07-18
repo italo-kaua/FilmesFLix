@@ -23,7 +23,7 @@ O FilmesFLix é uma aplicação desenvolvida com React e TypeScript que consome 
 
 ## 📷 Preview
 
-![Preview do FilmesFLix](./preview.png.png)
+![Preview do FilmesFLix](./preview.png)
 ```
 
 ## 📂 Estrutura do projeto
