@@ -24,7 +24,7 @@ O FilmesFLix é uma aplicação desenvolvida com React e TypeScript que consome 
 
 ## 📸 Demonstração
 
-Você pode adicionar aqui uma imagem ou GIF do projeto.
+Imagen do home do projeto
 
 ## 📷 Preview
 
@@ -98,7 +98,4 @@ Desenvolvido por **Ítalo Kauã**.
 
 GitHub:
 https://github.com/italo-kaua
-<<<<<<< HEAD
-=======
-```
->>>>>>> db1ea6978b3d2ff48d30d964fb416655f4faa625
+
