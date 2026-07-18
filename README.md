@@ -1,75 +1,99 @@
-# React + TypeScript + Vite
+# 🎬 FilmesFLix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O FilmesFLix é uma aplicação desenvolvida com React e TypeScript que consome a API do TMDB para exibir filmes e séries populares. O projeto também permite pesquisar títulos e salvar seus favoritos utilizando o LocalStorage.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Listagem de filmes populares
+- Listagem de séries populares
+- Pesquisa em tempo real
+- Adicionar e remover favoritos
+- Armazenamento dos favoritos no LocalStorage
+- Layout responsivo para desktop e dispositivos móveis
 
-## React Compiler
+## 🛠️ Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- React Router DOM
+- CSS
+- TMDB API
+- LocalStorage
+- React Icons
 
-## Expanding the ESLint configuration
+## 📸 Demonstração
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Você pode adicionar aqui uma imagem ou GIF do projeto.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```md
+![Preview](./preview.png)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Estrutura do projeto
 
 ```
+src
+├── components
+├── pages
+├── services
+├── types
+├── App.tsx
+└── main.tsx
+```
+
+## ⚙️ Como executar o projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/italo-kaua/FilmesFLix.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd FilmesFLix
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+## 🔑 Configuração da API
+
+Este projeto utiliza a API do **The Movie Database (TMDB)**.
+
+Crie uma conta no TMDB e gere sua chave de API.
+
+Depois, configure sua chave no arquivo responsável pelas requisições.
+
+## 📌 API utilizada
+
+- https://www.themoviedb.org/
+- https://developer.themoviedb.org/
+
+## 📚 O que pratiquei neste projeto
+
+- Componentização com React
+- Tipagem com TypeScript
+- Consumo de API utilizando Fetch
+- Gerenciamento de estado com Hooks
+- Rotas com React Router
+- Manipulação do LocalStorage
+- Responsividade com CSS
+- Organização de pastas e reutilização de componentes
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Ítalo Kauã**.
+
+GitHub:
+https://github.com/italo-kaua
